@@ -6,19 +6,30 @@ import skills from '../imgs/settings.svg';
 import instagram from '../imgs/Instagram.svg';
 import github from '../imgs/GitHub.svg';
 import linkedin from '../imgs/Linkedin.svg';
+import { Link } from 'react-router-dom';
 function Navbar() {
   return (
     <>
-      <div className="navbar hidden sm:block ">
+      <div className="navbar hidden sm:block sticky left-0 top-0">
         <nav className="h-screen w-16 bg-darker flex flex-col justify-between">
           <div className="flex flex-col justify-center items-center my-5 text-4xl">
-            <span className="logo text-primaryYellow">H</span>
+            <Link to="/">
+              <span className="logo text-primaryYellow">H</span>
+            </Link>
           </div>
-          <div className="nav-items flex flex-col">
-            <img className="my-5" src={home} alt="home icon" />
-            <img className="my-5" src={about} alt="about icon" />
-            <img className="my-5" src={skills} alt="skills icon" />
-            <img className="my-5" src={contact} alt="contact icon" />
+          <div className="nav-items flex flex-col items-center">
+            <Link to="/">
+              <img className="my-5" src={home} alt="home icon" />
+            </Link>
+            <Link to="/about">
+              <img className="my-5" src={about} alt="home icon" />
+            </Link>
+            <Link to="/skills">
+              <img className="my-5" src={skills} alt="home icon" />
+            </Link>
+            <Link to="/contact">
+              <img className="my-5" src={contact} alt="home icon" />
+            </Link>
           </div>
           <div className="social-icons flex items-center flex-col my-5">
             <a
@@ -48,10 +59,18 @@ function Navbar() {
       <div className="mobile-nav sm:hidden absolute bottom-0">
         <nav className="h-12 bg-dark flex items-center">
           <div className="flex justify-evenly items-center w-screen">
-            <img src={home} alt="home icon" />
-            <img src={about} alt="about icon" />
-            <img src={skills} alt="skills icon" />
-            <img src={contact} alt="contact icon" />
+            <Link to="/">
+              <img className="my-5" src={home} alt="home icon" />
+            </Link>
+            <Link to="/about">
+              <img className="my-5" src={about} alt="home icon" />
+            </Link>
+            <Link to="/skills">
+              <img className="my-5" src={skills} alt="home icon" />
+            </Link>
+            <Link to="/contact">
+              <img className="my-5" src={contact} alt="home icon" />
+            </Link>
           </div>
         </nav>
       </div>
