@@ -7,7 +7,7 @@ import AboutPage from './containers/AboutPage';
 import { Switch, Route } from 'react-router-dom';
 function App() {
   return (
-    <>
+    <div className="flex">
       <Navbar />
       <Switch>
         <Route exact path="/" component={HomePage} />
@@ -15,7 +15,7 @@ function App() {
         <Route path="/skills" component={SkillsPage} />
         <Route path="/about" component={AboutPage} />
       </Switch>
-    </>
+    </div>
   );
 }
 
