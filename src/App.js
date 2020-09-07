@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './containers/Navbar';
-import HomePage from './containers/HomePage';
+import HomePage from './containers/HomePage/HomePage';
 import SkillsPage from './containers/SkillsPage';
 import ContactPage from './containers/ContactPage';
 import AboutPage from './containers/AboutPage';
