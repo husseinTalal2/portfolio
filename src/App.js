@@ -15,7 +15,7 @@ function App() {
     { path: '/skills', name: 'Skills', Component: SkillsPage },
   ];
   return (
-    <div className="flex">
+    <div className="flex overflow-hidden">
       <Navbar />
       <Switch>
         <div className="container">
