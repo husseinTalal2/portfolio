@@ -12,7 +12,7 @@ import html from '../../imgs/html.svg';
 function SkillsPage() {
   return (
     <div className="bg-dark">
-      <div className="sm:px-32 pt-24 sm:flex  sm:pb-32 bg-dark w-full h-screen">
+      <div className="sm:px-32 pt-24 sm:flex  sm:pb-32 bg-dark w-screen h-screen">
         <div className="sm:w-1/2 sm:mx-0 mx-12 sm:mt-32">
           <h1 className="inline text-black bg-primaryYellow sm:text-4xl text-2xl font-semibold">
             Skills & Experience
