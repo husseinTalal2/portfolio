@@ -36,10 +36,6 @@ function App() {
             </Route>
           ))}
         </div>
-        {/* <Route exact path="/" component={HomePage} />
-        <Route path="/contact" component={ContactPage} />
-        <Route path="/skills" component={SkillsPage} />
-        <Route path="/about" component={AboutPage} /> */}
       </Switch>
     </div>
   );
