@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './containers/Navbar';
 import HomePage from './containers/HomePage/HomePage';
-import SkillsPage from './containers/SkillsPage';
+import SkillsPage from './containers/SkillsPage/SkillsPage';
 import ContactPage from './containers/ContactPage';
 import AboutPage from './containers/AboutPage';
 import { Switch, Route } from 'react-router-dom';
@@ -10,9 +10,9 @@ import './index.css';
 function App() {
   const routes = [
     { path: '/', name: 'Home', Component: HomePage },
-    { path: '/about', name: 'About', Component: SkillsPage },
+    { path: '/about', name: 'About', Component: AboutPage },
     { path: '/contact', name: 'Contact', Component: ContactPage },
-    { path: '/skills', name: 'Skills', Component: AboutPage },
+    { path: '/skills', name: 'Skills', Component: SkillsPage },
   ];
   return (
     <div className="flex overflow-hidden">
@@ -36,10 +36,6 @@ function App() {
             </Route>
           ))}
         </div>
-        {/* <Route exact path="/" component={HomePage} />
-        <Route path="/contact" component={ContactPage} />
-        <Route path="/skills" component={SkillsPage} />
-        <Route path="/about" component={AboutPage} /> */}
       </Switch>
     </div>
   );
