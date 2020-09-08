@@ -26,7 +26,7 @@ function SkillsPage() {
             vel eu enim
           </p>
         </div>
-        <div className="sm:w-2/3 w-screen sm:px-32 mt-16 sm:mt-16 px-16 flex flex-wrap justify-center">
+        <div className="sm:w-2/3 w-screen sm:px-32 mt-8 sm:mt-16 mb-12 px-12 flex flex-wrap justify-center">
           <img
             className="w-20 h-20 sm:w-32 sm:h-32 sm:py-0 px-2"
             src={react}

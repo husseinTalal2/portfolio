@@ -57,19 +57,19 @@ function Navbar() {
         </nav>
       </div>
       <div className="mobile-nav sm:hidden absolute bottom-0">
-        <nav className="h-12 bg-darker flex items-center">
+        <nav className="h-16 bg-darker flex items-center">
           <div className="flex justify-evenly items-center w-screen">
             <Link to="/">
-              <img className="my-5" src={home} alt="home icon" />
+              <img src={home} alt="home icon" />
             </Link>
             <Link to="/about">
-              <img className="my-5" src={about} alt="home icon" />
+              <img src={about} alt="home icon" />
             </Link>
             <Link to="/skills">
-              <img className="my-5" src={skills} alt="home icon" />
+              <img src={skills} alt="home icon" />
             </Link>
             <Link to="/contact">
-              <img className="my-5" src={contact} alt="home icon" />
+              <img src={contact} alt="home icon" />
             </Link>
           </div>
         </nav>
