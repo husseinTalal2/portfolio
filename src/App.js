@@ -10,9 +10,9 @@ import './index.css';
 function App() {
   const routes = [
     { path: '/', name: 'Home', Component: HomePage },
-    { path: '/about', name: 'About', Component: SkillsPage },
+    { path: '/about', name: 'About', Component: AboutPage },
     { path: '/contact', name: 'Contact', Component: ContactPage },
-    { path: '/skills', name: 'Skills', Component: AboutPage },
+    { path: '/skills', name: 'Skills', Component: SkillsPage },
   ];
   return (
     <div className="flex overflow-hidden">
