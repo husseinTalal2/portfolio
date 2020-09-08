@@ -57,7 +57,7 @@ function Navbar() {
         </nav>
       </div>
       <div className="mobile-nav sm:hidden absolute bottom-0">
-        <nav className="h-12 bg-dark flex items-center">
+        <nav className="h-12 bg-darker flex items-center">
           <div className="flex justify-evenly items-center w-screen">
             <Link to="/">
               <img className="my-5" src={home} alt="home icon" />
