@@ -9,9 +9,7 @@ function HomePage() {
         Talal,
         <br /> Front End Web Developer
       </h1>
-      <span className="text-sm font-normal text-lightGray">
-        And amateur photographer
-      </span>
+      <span className="text-sm font-normal text-lightGray">And amateur photographer</span>
 
       <Link
         to="/contact"
