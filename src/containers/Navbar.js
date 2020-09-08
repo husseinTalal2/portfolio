@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 function Navbar() {
   return (
     <>
-      <div className="navbar hidden sm:flex sticky left-0 top-0">
+      <div className="navbar hidden lg:flex sticky left-0 top-0">
         <nav className="h-screen w-16 bg-darker flex flex-col justify-between">
           <div className="flex flex-col justify-center items-center my-5 text-4xl">
             <Link to="/">
@@ -56,7 +56,7 @@ function Navbar() {
           </div>
         </nav>
       </div>
-      <div className="mobile-nav sm:hidden absolute bottom-0">
+      <div className="mobile-nav lg:hidden absolute bottom-0">
         <nav className="h-16 bg-darker flex items-center">
           <div className="flex justify-evenly items-center w-screen">
             <Link to="/">
