@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './containers/Navbar';
 import HomePage from './containers/HomePage/HomePage';
 import SkillsPage from './containers/SkillsPage/SkillsPage';
-import ContactPage from './containers/ContactPage/ContactPage';
+import ContactPage from './containers/ContactPage';
 import AboutPage from './containers/AboutPage';
 import { Switch, Route } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
