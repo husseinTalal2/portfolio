@@ -3,7 +3,7 @@ import Navbar from './containers/Navbar';
 import HomePage from './containers/HomePage/HomePage';
 import SkillsPage from './containers/SkillsPage/SkillsPage';
 import ContactPage from './containers/ContactPage/ContactPage';
-import AboutPage from './containers/AboutPage';
+import AboutPage from './containers/AboutPage/AboutPage';
 import { Switch, Route } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 import './index.css';
