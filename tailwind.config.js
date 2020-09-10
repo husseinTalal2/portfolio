@@ -7,6 +7,8 @@ module.exports = {
         darker: '#0a0a0a',
         primaryYellow: '#FFE600',
         lightGray: '#939393',
+        inputColor: '#242424',
+        placeholderColor: '#959393',
       },
     },
   },
