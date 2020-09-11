@@ -12,7 +12,7 @@ import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faUserCog } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 function Navbar() {
@@ -45,7 +45,7 @@ function Navbar() {
               />
             </Link>
             <Link to="/contact">
-            <FontAwesomeIcon
+              <FontAwesomeIcon
                 className="text-lightGray hover:text-primaryYellow mb-8 text-xl"
                 icon={faEnvelope}
               />
