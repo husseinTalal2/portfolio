@@ -1,11 +1,4 @@
 import React from 'react';
-import home from '../imgs/home.svg';
-import about from '../imgs/person.svg';
-import contact from '../imgs/email.svg';
-import skills from '../imgs/settings.svg';
-import instagram from '../imgs/Instagram.svg';
-import github from '../imgs/GitHub.svg';
-import linkedin from '../imgs/Linkedin.svg';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
@@ -15,6 +8,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 function Navbar() {
   return (
     <>
