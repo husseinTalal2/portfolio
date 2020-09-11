@@ -9,12 +9,12 @@ function Certificates() {
       </h1>
       <div className="flex lg:flex-row flex-col mt-16 lg:mt-24 justify-center items-center">
         <img
-          className="lg:w-1/3 h-full px-6 lg:mx-24"
+          className="lg:w-1/3  px-6 lg:mx-24"
           src={recodedCertificate}
           alt="recoded certificate"
         />
         <img
-          className="lg:w-1/3 h-full px-6 mt-12 mx-24"
+          className="lg:w-1/3 px-6 mt-12 mx-24"
           src={flatironCertificate}
           alt="flatiron certificate"
         />
