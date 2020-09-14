@@ -3,40 +3,23 @@ import Navbar from './containers/Navbar';
 import HomePage from './containers/HomePage/HomePage';
 import SkillsPage from './containers/SkillsPage/SkillsPage';
 import ContactPage from './containers/ContactPage/ContactPage';
-import AboutPage from './containers/AboutPage/AboutPage';
-import { Switch, Route } from 'react-router-dom';
-import { CSSTransition } from 'react-transition-group';
+import AboutMe from './components/ِAboutPage/AboutMe';
 import './index.css';
+import Certificates from './components/ِAboutPage/Certificates';
+import Testimonials from './components/ِAboutPage/Testimonials';
+import CV from './components/ِAboutPage/CV';
+
 function App() {
-  const routes = [
-    { path: '/', name: 'Home', Component: HomePage },
-    { path: '/about', name: 'About', Component: AboutPage },
-    { path: '/contact', name: 'Contact', Component: ContactPage },
-    { path: '/skills', name: 'Skills', Component: SkillsPage },
-  ];
   return (
-    <div className="flex overflow-hidden">
+    <div className="flex flex-col overflow-hidden">
       <Navbar />
-      <Switch>
-        <div className="container">
-          {routes.map(({ path, Component }) => (
-            <Route key={path} exact path={path}>
-              {({ match }) => (
-                <CSSTransition
-                  in={match != null}
-                  timeout={300}
-                  classNames="page"
-                  unmountOnExit
-                >
-                  <div className="page">
-                    <Component />
-                  </div>
-                </CSSTransition>
-              )}
-            </Route>
-          ))}
-        </div>
-      </Switch>
+      <HomePage />
+      <AboutMe />
+      <SkillsPage />
+      <Certificates />
+      <Testimonials />
+      <CV />
+      <ContactPage />
     </div>
   );
 }
