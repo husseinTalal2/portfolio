@@ -9,12 +9,14 @@ function AboutMe() {
             About me
           </h1>
           <p className="my-5 text-lightGray text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-            auctor sem purus, vitae finibus arcu maximus in. Aliquam erat
-            volutpat. Mauris bibendum dictum malesuada. Mauris pellentesque
-            dignissim urna, vel molestie ex convallis vitae. Donec porttitor
-            tristique euilgod. Vestibulum quis lectus et sem efficitur finibus
-            vel eu enim
+            I'm Hussein Talal, Front End Web Developer and a Software
+            Engineering student at Salahaddin University-Erbil also an amateur
+            photographer, recently I finished a 5 month intense web development
+            program run by Re:Coded with Flatiron School's curriculum. I was
+            always passionate about technology and how everything is being
+            digitized to make life easier with programming. My passion is to be
+            part of the tech industry to help build solutions and make life
+            easier.
           </p>
         </div>
       </div>
