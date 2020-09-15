@@ -2,7 +2,7 @@ import React from 'react';
 
 function CV() {
   return (
-    <div className="w-screen flex flex-col justify-center items-center bg-dark my-48">
+    <div className="w-screen h-screen flex flex-col justify-center items-center bg-dark md:mt-16">
       <h1 className="inline text-black bg-primaryYellow lg:text-5xl text-3xl font-semibold">
         Download my CV
       </h1>

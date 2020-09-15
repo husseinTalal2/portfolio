@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './style.css';
 function HomePage() {
   return (
-    <div className="flex flex-col sm:py-56 py-40 sm:px-32 justify-center px-12 text-3xl font-semibold sm:text-5xl text-white bg-dark w-screen h-screen">
+    <div className="flex flex-col sm:pt-56 py-40 sm:px-32 justify-center px-12 text-3xl font-semibold sm:text-5xl text-white bg-dark w-screen h-screen">
       <h1>
         Hi, <br /> I'm <span className="text-primaryYellow">H</span>ussein
         Talal,
