@@ -18,12 +18,14 @@ function SkillsPage() {
             Skills & Experience
           </h1>
           <p className="my-5 text-lightGray">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-            auctor sem purus, vitae finibus arcu maximus in. Aliquam erat
-            volutpat. Mauris bibendum dictum malesuada. Mauris pellentesque
-            dignissim urna, vel molestie ex convallis vitae. Donec porttitor
-            tristique euilgod. Vestibulum quis lectus et sem efficitur finibus
-            vel eu enim
+            I have experience in building websites with HTML, CSS, SASS, Vanilla
+            JavaScript and React with Bootstrap and other CSS libraries and
+            using Firebase to manage the database and the authentication in a
+            CI/CD workflow and Agile methodologies to manage the project, also I
+            have experience using Git and GitHub. I have worked on multiple
+            projects with a team in a collaborative environment. I like to work
+            in a collaborative team to achieve the desired goals and make
+            something out of nothing.
           </p>
         </div>
         <div className="lg:w-2/3 w-screen lg:px-32 md:px-24 sm:px-16 px-12 mt-8 lg:mt-16 mb-12 flex flex-wrap justify-center">
