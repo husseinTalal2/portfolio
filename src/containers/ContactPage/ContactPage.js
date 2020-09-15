@@ -19,7 +19,7 @@ const SignupSchema = Yup.object().shape({
 function ContactPage() {
   return (
     <div className="bg-dark flex w-screen h-screen">
-      <div className="contact-form lg:px-24 px-12 xs:px-4 mt-24 md:mt-40 md:w-1/2">
+      <div className="contact-form lg:px-24 px-12 xs:px-4 md:mt-24 md:mt-40 md:w-1/2">
         <h1 className="inline text-black bg-primaryYellow lg:text-4xl inline text-2xl font-semibold">
           Contact me
         </h1>
