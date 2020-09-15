@@ -3,7 +3,7 @@ import recodedCertificate from '../../imgs/recoded.jpg';
 import flatironCertificate from '../../imgs/flatiron.jpg';
 function Certificates() {
   return (
-    <div className="w-screen h-1/2 flex flex-col justify-center items-center bg-dark my-48">
+    <div className="w-screen h-1/2 flex flex-col justify-center items-center bg-dark md:mt-32">
       <h1 className="inline text-black bg-primaryYellow lg:text-5xl text-3xl font-semibold">
         Certificates
       </h1>
