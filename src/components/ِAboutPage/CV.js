@@ -1,5 +1,5 @@
 import React from 'react';
-
+import resume from '../../CV/HusseinTalalResume.pdf';
 function CV() {
   return (
     <div className="w-screen h-screen flex flex-col justify-center items-center bg-dark md:mt-16">
@@ -10,9 +10,11 @@ function CV() {
         <p className="text-justify px-10">
           Download my full CV to know all the details about me in one page{' '}
         </p>
-        <button className="button text-center my-12 bg-transparent w-32 text-base hover:bg-primaryYellow text-primaryYellow font-normal hover:text-darker py-2 px-4 border border-primaryYellow hover:border-transparent rounded-none">
-          Download
-        </button>
+        <a href={resume} download="Hussein Talal CV.pdf">
+          <button className="button text-center my-12 bg-transparent w-32 text-base hover:bg-primaryYellow text-primaryYellow font-normal hover:text-darker py-2 px-4 border border-primaryYellow hover:border-transparent rounded-none">
+            Download
+          </button>
+        </a>
       </div>
     </div>
   );
