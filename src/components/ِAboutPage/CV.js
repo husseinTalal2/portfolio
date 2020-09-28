@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from '../../CV/HusseinTalalResume.pdf';
+import resume from '../../CV/Hussein Talal Resume.pdf';
 function CV() {
   return (
     <div className="w-screen flex flex-col justify-center items-center bg-dark md:my-32 my-24">
