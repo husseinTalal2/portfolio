@@ -12,7 +12,7 @@ import { Route, Switch } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 function App() {
   return (
-    <div className="flex flex-col overflow-hidden">
+    <div className="flex flex-col overflow-x-hidden">
       <Router>
         <Navbar />
         <Switch>
