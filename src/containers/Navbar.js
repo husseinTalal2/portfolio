@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
@@ -8,42 +8,51 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { useLocation } from 'react-router-dom';
 
 function Navbar() {
+  const location = useLocation();
+
+  function activeClassName(path) {
+    return location.pathname === path ? 'text-primaryYellow' : 'text-lightGray';
+  }
+
   return (
     <>
       <div className="navbar hidden lg:flex fixed left-0 top-0">
         <nav className="h-screen w-16 bg-darker flex flex-col justify-between">
           <div className="flex flex-col justify-center items-center my-5 text-4xl">
-            <Link to="/">
+            <NavLink to="/">
               <span className="logo text-primaryYellow">H</span>
-            </Link>
+            </NavLink>
           </div>
           <div className="nav-items flex flex-col items-center">
-            <Link to="/">
+            <NavLink to="/">
               <FontAwesomeIcon
-                className="text-lightGray hover:text-primaryYellow mb-8 text-xl"
+                className={`mb-8 text-xl ${activeClassName('/')}`}
                 icon={faHome}
               />
-            </Link>
-            <Link to="/about">
+            </NavLink>
+
+            <NavLink to="/about">
               <FontAwesomeIcon
-                className="text-lightGray hover:text-primaryYellow mb-8 text-xl"
+                className={`mb-8 text-xl ${activeClassName('/about')}`}
                 icon={faUser}
               />
-            </Link>
-            <Link to="/skills">
+            </NavLink>
+
+            <NavLink to="/skills">
               <FontAwesomeIcon
-                className="text-lightGray hover:text-primaryYellow mb-8 text-xl"
+                className={`mb-8 text-xl ${activeClassName('/skills')}`}
                 icon={faUserCog}
               />
-            </Link>
-            <Link to="/contact">
+            </NavLink>
+            <NavLink to="/contact">
               <FontAwesomeIcon
-                className="text-lightGray hover:text-primaryYellow mb-8 text-xl"
+                className={`mb-8 text-xl ${activeClassName('/contact')}`}
                 icon={faEnvelope}
               />
-            </Link>
+            </NavLink>
           </div>
           <div className="social-icons flex items-center flex-col">
             <a
@@ -82,30 +91,30 @@ function Navbar() {
       <div className="mobile-nav lg:hidden fixed bottom-0">
         <nav className="h-16 bg-darker flex items-center">
           <div className="flex justify-evenly items-center w-screen">
-            <Link to="/">
+            <NavLink to="/">
               <FontAwesomeIcon
-                className="text-lightGray hover:text-primaryYellow lg:mb-8 text-xl"
+                className={`lg:mb-8 text-xl ${activeClassName('/')}`}
                 icon={faHome}
               />
-            </Link>
-            <Link to="/about">
+            </NavLink>
+            <NavLink to="/about">
               <FontAwesomeIcon
-                className="text-lightGray hover:text-primaryYellow lg:mb-8"
+                className={`lg:mb-8 text-xl ${activeClassName('/about')}`}
                 icon={faUser}
               />
-            </Link>
-            <Link to="/skills">
+            </NavLink>
+            <NavLink to="/skills">
               <FontAwesomeIcon
-                className="text-lightGray hover:text-primaryYellow lg:mb-8"
+                className={`lg:mb-8 text-xl ${activeClassName('/skills')}`}
                 icon={faUserCog}
               />
-            </Link>
-            <Link to="/contact">
+            </NavLink>
+            <NavLink to="/contact">
               <FontAwesomeIcon
-                className="text-lightGray hover:text-primaryYellow lg:mb-8"
+                className={`lg:mb-8 text-xl ${activeClassName('/contact')}`}
                 icon={faEnvelope}
               />
-            </Link>
+            </NavLink>
           </div>
         </nav>
       </div>

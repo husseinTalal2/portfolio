@@ -8,18 +8,33 @@ import './index.css';
 import Certificates from './components/ِAboutPage/Certificates';
 import Testimonials from './components/ِAboutPage/Testimonials';
 import CV from './components/ِAboutPage/CV';
-
+import { Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 function App() {
   return (
     <div className="flex flex-col overflow-hidden">
-      <Navbar />
-      <HomePage />
-      <AboutMe />
-      <SkillsPage />
-      <Certificates />
-      <Testimonials />
-      <CV />
-      <ContactPage />
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path="/" exact component={HomePage} />
+          <Route
+            path="/about"
+            exact
+            component={() => {
+              return (
+                <>
+                  <AboutMe />
+                  <Certificates />
+                  <Testimonials />
+                  <CV />
+                </>
+              );
+            }}
+          />
+          <Route path="/skills" component={SkillsPage} />
+          <Route path="/contact" component={ContactPage} />
+        </Switch>
+      </Router>
     </div>
   );
 }
