@@ -9,7 +9,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { useLocation } from 'react-router-dom';
-
+import logo from '../imgs/logo.svg';
 function Navbar() {
   const location = useLocation();
 
@@ -23,7 +23,7 @@ function Navbar() {
         <nav className="h-screen w-16 bg-darker flex flex-col justify-between">
           <div className="flex flex-col justify-center items-center my-5 text-4xl">
             <NavLink to="/">
-              <span className="logo text-primaryYellow">H</span>
+              <img src={logo} className="logo" />
             </NavLink>
           </div>
           <div className="nav-items flex flex-col items-center">
