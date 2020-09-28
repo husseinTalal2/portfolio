@@ -7,7 +7,7 @@ function Certificates() {
       <h1 className="inline text-black bg-primaryYellow lg:text-5xl text-3xl font-semibold">
         Certificates
       </h1>
-      <div className="flex lg:flex-row flex-col mt-16 lg:mt-24 justify-center items-center">
+      <div className="flex lg:flex-row flex-col lg:mt-4 mt-12 justify-center items-center">
         <img
           className="lg:w-1/3  px-6 lg:mx-24"
           src={recodedCertificate}

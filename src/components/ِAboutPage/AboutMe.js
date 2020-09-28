@@ -3,7 +3,7 @@ import React from 'react';
 function AboutMe() {
   return (
     <div className="bg-dark flex w-screen h-full lg:h-screen">
-      <div className="lg:px-24 xs:px-4 md:mt-40 lg:w-1/2">
+      <div className="lg:px-32 xs:px-4 md:mt-40 my-16 lg:w-1/2">
         <div className=" lg:mx-0 mx-12 lg:mt-24 lg:block flex flex-col items-center">
           <h1 className="inline text-black bg-primaryYellow text-3xl lg:text-5xl font-semibold">
             About me
