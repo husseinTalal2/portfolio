@@ -18,10 +18,13 @@ function AboutMe() {
             problems. His experience includes building websites with HTML/CSS,
             SASS, Vanilla JavaScript, React with Bootstrap and other CSS
             libraries, Firebase for databasement management and authentication
-            in a CI/CD workflow, and Agile for project management. Projects
-            include CURIOSITY-INSPIRING SOUNDING NAMES OF ALL PROJECTS. Hussein
-            is known for getting excited about creating something out of nothing
-            with high-energy and collaborative teams with shared goals.
+            in a CI/CD workflow, and Agile for project management. He worked on
+            several projects including Todo app, a website to browse the latest
+            movies and search for any movie, and Doctor Booking website to book
+            doctor appointments to save the patient time and effort and help the
+            doctors to better manage the appointments. Hussein is known for
+            getting excited about creating something out of nothing with
+            high-energy and collaborative teams with shared goals.
           </p>
         </div>
       </div>
