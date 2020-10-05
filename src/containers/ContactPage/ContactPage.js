@@ -54,7 +54,7 @@ function ContactPage() {
           }}
         >
           {({ errors, touched }) => (
-            <Form className="flex flex-col w-full bg-dark">
+            <Form name="contact" className="flex flex-col w-full bg-dark">
               <Field
                 className="bg-inputColor text-placeholderColor h-12 rounded-none p-4 mt-6"
                 name="firstName"
