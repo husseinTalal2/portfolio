@@ -2,6 +2,12 @@ import React from 'react';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+};
+
 const SignupSchema = Yup.object().shape({
   firstName: Yup.string()
     .min(2, 'Too Short!')
@@ -38,10 +44,17 @@ function ContactPage() {
           validationSchema={SignupSchema}
           onSubmit={(values) => {
             console.log(values);
+            fetch('/', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+              body: encode({ 'form-name': 'contact', values }),
+            })
+              .then(() => alert('Success!'))
+              .catch((error) => alert(error));
           }}
         >
           {({ errors, touched }) => (
-            <Form className="flex flex-col w-full bg-dark">
+            <Form name="contact" className="flex flex-col w-full bg-dark">
               <Field
                 className="bg-inputColor text-placeholderColor h-12 rounded-none p-4 mt-6"
                 name="firstName"
